@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+        <style>
+            html{
+                background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), 
+                url(weather.jpg);
+                background-size: cover;
+                color: #fff;
+                background-attachment: fixed;
+            }
+            
+            .container{
+                margin-left: 40%;
+                margin-top: 18%;
+            }
+            
+            .title{
+                font-size: 60px;
+                width: 100%;
+                font-family: 'Lobster', inherit, sans-serif;
+                text-decoration: underline;
+                font-style: italic;
+                word-spacing: 3px;
+                letter-spacing: 2px;
+            }
+            
+            #temp, #tempUnit{
+                font-size: 30px;
+                margin-top: 5px;
+            }
+            
+            #descrip{
+                font-size: 30px;
+                margin-top: 5px;
+            }
+            
+            #btn{
+                margin-top: 15px;
+                margin-left: 14%;
+            }
+            
+            #btn{
+                
+                  margin-top: 15px;
+                  font-family: Raleway, Verdana;
+                  text-align: center;
+                  background-color: rgba(100, 200, 200, 0.13);
+                  display: inline-block;
+                  height: 50px;
+                  width: 150px;
+                  border-radius: 10px;
+                  font-size: 20px;
+                  color: white;
+
+              
+            }
+        
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div id="background"></div>
+   
+        <div class="container" id="content">
+            <h1 class="title">Local Weather</h1>
+            <div class="generatedInfo">
+                <div class="temperature">
+                    <div id="temp"></div>
+                    <div id="tempUnit" class="celsius">Degree: &#8451</div>
+                </div>
+                <div id="descrip"></div>
+            </div>
+            <button id="btn"> Celsius </button>
+        </div>
+      
+        
+        <script src="main.js"></script>
+    </body>
+
+
+</html>
